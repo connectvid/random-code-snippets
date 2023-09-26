@@ -4,7 +4,7 @@ const fs = require("fs");
 const callMe = async () => {
   const apiKey = "AlboslcRdT9ag77GNc7xEz";
   const uploadUrl = `https://www.filestackapi.com/api/store/S3?key=${apiKey}`;
-  let fileData = fs.readFileSync("./../circle_temp.mp4");
+  let fileData = fs.readFileSync("./../output_video.mp4");
 
   // Upload the processed video to the specified URL
   const response = await axios.post(uploadUrl, fileData, {
